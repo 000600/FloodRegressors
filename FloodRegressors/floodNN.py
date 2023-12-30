@@ -76,7 +76,7 @@ mse = mean_squared_error(predictions, y_test)
 print("\nTest Mean Squared Error (MSE):", mse)
 
 # Compare model's prediction on an input to the actual label corresponding to that input (change the index to view a different input and output set)
-index = 1
+index = 0
 prediction = predictions[index][0]
 label = y_test[index]
 
