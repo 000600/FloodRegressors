@@ -23,7 +23,7 @@ The dataset can be found at this link: https://www.kaggle.com/datasets/brijlaldh
 - River management
 - Encroachments
 
-A full description of all included features can be found on the dataset's webpage
+A full description of all included features can be found on the dataset's webpage.
 
 ## Libraries
 These neural networks and XGBoost Regressor were created with the help of the Tensorflow, Scikit-Learn, and XGBoost libraries.
