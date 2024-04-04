@@ -9,7 +9,7 @@ import pandas as pd
 df = pd.read_csv('flood.csv')
 df = pd.DataFrame(df)
 
-# Initialize x and y lists
+# Initialize x and y data frames
 y = df['FloodProbability']
 x = df.drop(labels = ['FloodProbability'], axis = 1)
 
