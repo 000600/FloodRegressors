@@ -12,15 +12,8 @@ df = pd.read_csv('flood.csv')
 df = pd.DataFrame(df)
 
 # Initialize x and y lists
-x = []
-y = list(df.pop("FloodProbability"))
-
-# Add dataset to x and y lists
-for row in range(df.shape[0]):
-  rows = []
-  for point in range(len(df.loc[0])): # Loop through all columns
-    rows.append(df.iloc[row][point])
-  x.append(rows)
+y = df['FloodProbability']
+x = df.drop(labels = ['FloodProbability'], axis = 1)
 
 # Divide the x and y values into train and test sets
 x_train, x_test, y_train, y_test = train_test_split(x, y, random_state = 1)
@@ -36,7 +29,7 @@ print(f"\nTest Mean Squared Error (MSE): {mse}")
 
 # Prediction vs. actual value (change the index to view a different input and output set)
 index = 0
-prediction = model.predict([x_test[index]])[0]
+prediction = model.predict(x_test)[index]
 
 print(f"Model's Prediction on a Sample Input: {prediction}")
-print(f"Actual Label on the Same Input: {y_test[index]}\n")
+print(f"Actual Label on the Same Input: {y_test.iat[index]}\n")
