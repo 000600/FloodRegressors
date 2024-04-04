@@ -11,9 +11,9 @@ This neural network (found in the **floodNN.py** file) assesses the probability 
 I found that the model had a mean squared error of around 0.001 after some hyperparameter tuning, although I am sure lower error values are possible. Feel free to further tune the hyperparameters or build upon the model!
 
 ## The XGB Regressor
-An XGBoost Regressor model is also included in the **floodXGB.py**. The XGBoost Regressor has 100 estimators, a learning rate of 0.001, and early stopping based on validation sets. The classifier predicts the likelihood of a flood based on the same inputs as the model in the **floodNN.py** file. Although the number of estimators is lower than usual, I found that it achieved similar results.
+An XGBoost Regressor model is also included in the **floodXGB.py**. The XGBoost Regressor has 200 estimators, a learning rate of 0.001, and early stopping based on validation sets. The classifier predicts the likelihood of a flood based on the same inputs as the model in the **floodNN.py** file. I found that this configuration achieved a mean squared error of around 0.002, although lower error is probably possible.
 
-As with the neural network, feel free to tune the hyperparameters or build upon the classifier!
+As with the neural network, feel free to tune the hyperparameters or build upon the regressor!
 
 ## The Dataset
 The dataset can be found at this link: https://www.kaggle.com/datasets/brijlaldhankour/flood-prediction-factors/data. Credit for the dataset collection goes to **BYRAM BLAS RIMAC**, **YASVANTHIKA**, **Rafi Widyansyah**, and others on *Kaggle*. It describes the probability of a flood occurring based on multiple facotrs, including:
@@ -22,6 +22,8 @@ The dataset can be found at this link: https://www.kaggle.com/datasets/brijlaldh
 - Monsoon intensity
 - River management
 - Encroachments
+
+A full description of all included features can be found on the dataset's webpage
 
 ## Libraries
 These neural networks and XGBoost Regressor were created with the help of the Tensorflow, Scikit-Learn, and XGBoost libraries.
