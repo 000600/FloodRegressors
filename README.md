@@ -16,7 +16,8 @@ An XGBoost Regressor model is also included in the **floodXGB.py**. The XGBoost 
 As with the neural network, feel free to tune the hyperparameters or build upon the classifier!
 
 ## The Dataset
-https://www.kaggle.com/datasets/brijlaldhankour/flood-prediction-factors/data
+The dataset can be found at this link: https://www.kaggle.com/datasets/brijlaldhankour/flood-prediction-factors/data. Credit for the dataset collection goes to **BRYAM BLAS RIMAC**, **YASVANTHIKA**, **Rafi Widyansyah**, and others on *Kaggle*. It describes the probability of a flood occurring based on multiple factors, including:
+- 
 
 ## Libraries
 These neural networks and XGBoost Regressor were created with the help of the Tensorflow, Scikit-Learn, and XGBoost libraries.
